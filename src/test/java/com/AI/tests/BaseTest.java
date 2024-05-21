@@ -16,7 +16,7 @@ import driver.Driver;
 public class BaseTest {
 
 	
-	//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
+	
 	protected BaseTest() {
 
 	}
