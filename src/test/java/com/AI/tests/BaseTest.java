@@ -16,7 +16,49 @@ import driver.Driver;
 public class BaseTest {
 
 	
-	
+	/**
+	 * alwaysRun
+dependsOnGroups
+dependsOnMethods
+enabled
+groups
+inheritGroups
+onlyForGroups
+
+@DataProvider
+name
+parallel
+
+@Factory
+
+@Listeners
+value
+
+@Parameters
+value
+
+@Test
+alwaysRun
+dataProvider
+dataProviderClass
+dependsOnGroups
+dependsOnMethods
+description
+enabled
+expectedExceptions
+groups
+invocationCount
+invocationTimeOut
+priority
+successPercentage
+singleThreaded
+timeOut
+threadPoolSize
+
+	 * 
+	 * 
+	 * 
+	 */
 	protected BaseTest() {
 
 	}
