@@ -5,7 +5,7 @@
     <classes>
       <class name="com.AI.tests.InternetTest">
         <methods>
-          <include name="dragNdrop"/>
+          <include name="checkboxes"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

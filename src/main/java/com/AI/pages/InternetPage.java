@@ -18,7 +18,9 @@ public class InternetPage extends Basepage {
 	
 	By dragA = By.xpath("/html/body/div[2]/div/div/div/div[1]");
 	By dropB = By.xpath("/html/body/div[2]/div/div/div/div[2]");
+	By checkboxes = By.xpath("//*[@id=\"content\"]/div");
 	
+	By a6checkboxes = By.xpath("/html/body/div[2]/div/ul/li[6]/a");
 
 	public void abtestinglinkclick() throws InterruptedException  {
 		
@@ -59,7 +61,17 @@ public class InternetPage extends Basepage {
 		Thread.sleep(5000);
 	}
 
-
+public void clickoncheckboxes() {
+	
+	System.out.println("clicking on check box");
+	click(a6checkboxes,  WaitStrategy.CLICKABLE );
+	
+	System.out.println("finding total checkboxes ");
+	
+	checkboxclick(checkboxes, WaitStrategy.CLICKABLE);
+	
+	
+}
 
 
 

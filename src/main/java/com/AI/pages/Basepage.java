@@ -15,6 +15,27 @@ public class Basepage {
 	
 	
 	
+	
+	public void checkboxclick(By by ,WaitStrategy waitstrategy ) {
+		List<WebElement> checkboxeelements  = driver.DriverManager.getDriver().findElements(by);
+		
+		System.out.println("checkbox available : " + checkboxeelements.size() );
+		for (WebElement c : checkboxeelements) {
+			
+			System.out.println("is this selected : " + c.isSelected());
+			
+			if(!c.isSelected()) {
+				
+				
+				c.click();
+			}
+		}
+			
+	}
+		
+		
+
+	
 	public void addremoveW(By by , WaitStrategy waitstrategy){
 		
 	WebElement element = 	driver.DriverManager.getDriver().findElement(by);

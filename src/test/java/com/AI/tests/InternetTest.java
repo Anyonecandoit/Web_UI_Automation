@@ -8,10 +8,13 @@ import org.testng.annotations.Test;
 import com.AI.listeners.ListenerClass;
 import com.AI.pages.InternetPage;
 @Listeners({ListenerClass.class})
+
+
+
 public class InternetTest extends BaseTest {
 	private WebDriver driver;
 		
-	@Test(enabled = false)
+	@Test(enabled = true , groups = {"sanity" ,"functional"} )
 	
 
 public void abtest() throws InterruptedException {
@@ -23,7 +26,7 @@ public void abtest() throws InterruptedException {
 }
 	
 	
-	@Test
+	@Test(enabled = true , dependsOnGroups = {"smoke"} ,dependsOnMethods = "abtest" , groups = {"smoke"})
 	
 	public void addelement() throws Throwable {
 		InternetPage ip = new InternetPage();
@@ -40,6 +43,15 @@ public void dragNdrop() throws Throwable {
 	ip.dragobject(driver);
 	
 }
+	
+	
+	@Test 
+	
+	public void checkboxes() {
+		InternetPage ip = new InternetPage();
+		ip.clickoncheckboxes();
+		
+	}
 	
 
 }
