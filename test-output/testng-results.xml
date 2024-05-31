@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-21T20:01:18 IST" name="Default suite" finished-at="2024-05-21T20:01:38 IST" duration-ms="20020">
+  <suite started-at="2024-05-31T17:43:31 IST" name="Default suite" finished-at="2024-05-31T17:44:23 IST" duration-ms="52403">
     <groups>
     </groups>
-    <test started-at="2024-05-21T20:01:18 IST" name="Default test" finished-at="2024-05-21T20:01:38 IST" duration-ms="20020">
-      <class name="com.AI.tests.InternetTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.AI.tests.InternetTest@4c1909a3]" started-at="2024-05-21T20:01:18 IST" name="setUp" finished-at="2024-05-21T20:01:36 IST" duration-ms="18687" status="PASS">
+    <test started-at="2024-05-31T17:43:31 IST" name="Default test" finished-at="2024-05-31T17:44:23 IST" duration-ms="52403">
+      <class name="com.AI.tests.GainerTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.AI.tests.GainerTest@4310d43]" started-at="2024-05-31T17:43:31 IST" name="setUp" finished-at="2024-05-31T17:43:43 IST" duration-ms="12034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkboxes()[pri:0, instance:com.AI.tests.InternetTest@4c1909a3]" started-at="2024-05-21T20:01:36 IST" name="checkboxes" finished-at="2024-05-21T20:01:37 IST" duration-ms="697" status="PASS">
+        <test-method signature="getcompanynameandcurrencyprice()[pri:0, instance:com.AI.tests.GainerTest@4310d43]" started-at="2024-05-31T17:43:43 IST" name="getcompanynameandcurrencyprice" finished-at="2024-05-31T17:44:22 IST" duration-ms="39650" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkboxes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AI.tests.InternetTest@4c1909a3]" started-at="2024-05-21T20:01:37 IST" name="tearDown" finished-at="2024-05-21T20:01:38 IST" duration-ms="446" status="PASS">
+        </test-method> <!-- getcompanynameandcurrencyprice -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.AI.tests.GainerTest@4310d43]" started-at="2024-05-31T17:44:22 IST" name="tearDown" finished-at="2024-05-31T17:44:23 IST" duration-ms="641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.AI.tests.InternetTest -->
+      </class> <!-- com.AI.tests.GainerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

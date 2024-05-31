@@ -19,6 +19,8 @@ public class ListenerClass  implements ITestListener , ISuiteListener{
 
 	@Override
 	public void onStart(ISuite suite) {
+		
+		System.out.println("test started");
 		 ExtentReport.initReports();  
 		
 	}
@@ -26,6 +28,8 @@ public class ListenerClass  implements ITestListener , ISuiteListener{
 
 	@Override
 	public void onFinish(ISuite suite) {
+		
+		System.out.println("test execution completed");
 		try {
 			ExtentReport.flushReports();
 			

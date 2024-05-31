@@ -1,6 +1,11 @@
 package com.AI.pages;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -14,6 +19,51 @@ import com.tmb.factories.ExplicitWaitFactory;
 public class Basepage {
 	
 	
+	public 	List<String>  getText(By by , WaitStrategy waitStrategy){
+	List<WebElement>	gl =  driver.DriverManager.getDriver().findElements(by);
+	
+	List<String> agl = new ArrayList<>();
+	
+	System.out.println("initial size :"+  agl.size());
+ 	
+		for(WebElement f : gl) {
+			
+		System.out.println(	f.getText());
+		
+		agl.add(f.getText());		
+		
+			
+		}
+		
+		
+		System.out.println("after adding  size :"+  agl.size());
+		return agl ;
+		
+	}
+	
+	
+	
+	
+	public Map<String, Double> extracttabledata(By by, By by1, WaitStrategy waitstrategy) {
+		
+	List<WebElement>	companyNames = driver.DriverManager.getDriver().findElements(by);	
+	List<WebElement>	currentPrices = driver.DriverManager.getDriver().findElements(by1);
+	IntStream indices = 	IntStream.range(0,companyNames.size());
+	
+	List<Map.Entry<String, Double>> pairs = indices.mapToObj(i -> Map.entry(
+		    companyNames.get(i).getText(),
+		    Double.parseDouble(currentPrices.get(i).getText().replace(",", ""))
+		)).collect(Collectors.toList());
+
+		Map<String, Double> dp = pairs.stream().collect(Collectors.toMap(
+		    Map.Entry::getKey,
+		    Map.Entry::getValue
+		));
+
+
+		  dp.forEach((companyName, currentPrice) -> System.out.println("companyname:"+ companyName+"    " +  "currentprice:" + currentPrice));
+		return dp ;
+	}
 	
 	
 	public void checkboxclick(By by ,WaitStrategy waitstrategy ) {
