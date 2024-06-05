@@ -10,7 +10,7 @@ public class TDP {
 	
 	
 	
-	By Links =  By.tagName("a");
+	By Links =  By.xpath("/html/body/nav/div[2]/div/div[2]/div[2]/div/child::div");
 	
 //	BY by = BY by 
 	
@@ -27,7 +27,7 @@ public class TDP {
 	
 	
 	public List<WebElement> getLinksText(By by) {
-		List<WebElement> li = driver.DriverManager.getDriver().findElements(By.tagName("a"));
+		List<WebElement> li = driver.DriverManager.getDriver().findElements(by);
 		int count = li.size();
 		System.out.println("Total number of links " +count);
 		// ExtentManager.getExtentTest().pass("Total no of links is "  + count);

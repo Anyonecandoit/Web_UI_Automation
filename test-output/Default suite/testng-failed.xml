@@ -5,6 +5,8 @@
     <classes>
       <class name="com.AI.tests.TD">
         <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="getalllinks"/>
         </methods>
       </class> <!-- com.AI.tests.TD -->
