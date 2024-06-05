@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import io.reactivex.rxjava3.processors.AsyncProcessor;
-
+ 
 public class AllStreamsCollections {
 
 
@@ -134,7 +134,7 @@ public class AllStreamsCollections {
 	        );
 
 	   //     StockDataProcessor processor = new AsyncProcessor();
-	        processor.processStockData(stockData);
+	    //    processor.processStockData(stockData);
 	    }
 	}
 

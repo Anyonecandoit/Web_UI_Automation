@@ -3,9 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.AI.tests.InternetTest"/>
-      <class name="com.AI.tests.BaseTest"/>
-      <class name="com.AI.tests.InternetTest2"/>
+      <class name="com.AI.tests.TD"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

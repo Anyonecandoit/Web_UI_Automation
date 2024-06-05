@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AI.tests.GainerTest">
+      <class name="com.AI.tests.TD">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="getcompanynameandcurrencyprice"/>
+          <include name="getalllinks"/>
         </methods>
-      </class> <!-- com.AI.tests.GainerTest -->
+      </class> <!-- com.AI.tests.TD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
