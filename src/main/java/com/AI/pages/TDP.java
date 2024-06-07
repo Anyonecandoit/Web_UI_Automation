@@ -40,3 +40,55 @@ public class TDP {
 		return   li ;
 	}
 }
+
+
+
+/**
+
+maven :  it is a build tool  thats helps in project management , the tool helps in building and documenting the project 
+
+
+
+it used in following process
+
+generating the source code 
+generates documentation from the source code 
+compliling the source code 
+packaging the compiled code into jar files
+installing the packaged code in local repository server or central repository
+
+it is written in java & c#  is based on the POM PROJECT OBJECT MODEL 
+
+POM: It is the building block in maven 
+
+it is an xml file that has all the information regarding the project and configuration details 
+
+when we tend to execute the task , maven search for the POM in the current directory 
+
+this tool is used to build  and manage any java based project , it simplifies the day to day work of java developers aand helps them in there projects 
+
+
+NEED FOR MAVEN : 
+it helps in downloading the dependencies , which referes to the libraries or JAR files 
+
+PROBLEMS THAT MAVEN SOLVED : 
+getting the right JAR files for each projects as there may be the different versions of separate packages 
+to download the dependencies visiting the offical website of different software is not needed , we can just visit , "mvnrepository.com"
+
+helps to create right project structure which is essential for execution 
+
+helps to building and deploying the project to make it work 
+
+
+
+what maven does : 
+
+it simplifies the process of building the proect 
+task of downloading jar files and other dependencies does not need to be done manually
+provides easy acess to all required information
+Apache maven helps to manage all process such as building documentation , releasing distrubute in project mmanagement 
+
+/ many companies use MAVEN 
+
+ 
+**/
